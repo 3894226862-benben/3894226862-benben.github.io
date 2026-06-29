@@ -1,121 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alex Chen - AI Automation & Custom Development</title>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text font-size='14'>⚡</text></svg>">
+<title>Codex Dev Studio - 自动化开发 & 技术解决方案</title>
 <style>
-/* Reset & base */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{font-size:16px;scroll-behavior:smooth}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:#1a1a2e;background:#f8f9fa;line-height:1.6}
 a{color:#2563eb;text-decoration:none}
 a:hover{text-decoration:underline}
 .container{max-width:960px;margin:0 auto;padding:0 24px}
-
-/* Header */
 header{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:60px 0 48px}
 header h1{font-size:2.4rem;font-weight:700;margin-bottom:8px}
 header .tagline{font-size:1.15rem;color:#94a3b8;margin-bottom:16px}
-header .location{font-size:.9rem;color:#64748b}
+header .contact-info{font-size:.9rem;color:#64748b;margin-top:8px}
+header .contact-info a{color:#60a5fa}
 .badge{display:inline-block;background:#2563eb;color:#fff;font-size:.75rem;padding:3px 10px;border-radius:12px;margin-right:6px;margin-top:8px}
-
-/* Sections */
 section{padding:56px 0}
 section:nth-child(even){background:#fff}
 section h2{font-size:1.5rem;font-weight:600;margin-bottom:28px;color:#1e293b}
-
-/* Services grid */
 .services-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
 .service-card{background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:24px;transition:box-shadow .2s}
 .service-card:hover{box-shadow:0 2px 12px rgba(0,0,0,.08)}
 .service-card h3{font-size:1rem;font-weight:600;margin-bottom:8px;color:#1e293b}
 .service-card p{font-size:.88rem;color:#64748b}
 .service-card .price{display:inline-block;margin-top:10px;font-size:.82rem;color:#2563eb;font-weight:500}
-
-/* Process */
-.process-steps{display:flex;flex-wrap:wrap;gap:24px}
-.step{flex:1;min-width:180px;position:relative}
-.step .num{font-size:2rem;font-weight:700;color:#2563eb;line-height:1;margin-bottom:6px}
-.step h3{font-size:.95rem;font-weight:600;margin-bottom:4px}
-.step p{font-size:.85rem;color:#64748b}
-
-/* About */
-.about-text{font-size:.95rem;color:#334155;max-width:680px}
-.about-text p{margin-bottom:12px}
-
-/* Contact CTA */
+.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.how-step{text-align:center;padding:20px}
+.how-step .num{font-size:2rem;font-weight:700;color:#2563eb;line-height:1;margin-bottom:6px}
+.how-step h3{font-size:.95rem;font-weight:600;margin-bottom:4px}
+.how-step p{font-size:.85rem;color:#64748b}
+.project-card{background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:20px;margin-bottom:16px}
+.project-card h3{font-size:1rem;font-weight:600;margin-bottom:4px}
+.project-card p{font-size:.85rem;color:#64748b;margin-bottom:6px}
+.project-card .tag{display:inline-block;background:#e0e7ff;color:#4338ca;font-size:.75rem;padding:2px 8px;border-radius:10px;margin-right:4px}
 .cta-section{text-align:center;padding:48px 0}
 .cta-section h2{font-size:1.6rem;margin-bottom:12px}
 .cta-section p{color:#64748b;margin-bottom:24px}
 .cta-btn{display:inline-block;background:#2563eb;color:#fff;padding:14px 36px;border-radius:8px;font-weight:600;font-size:1rem;transition:background .2s}
 .cta-btn:hover{background:#1d4ed8;text-decoration:none}
 .cta-note{font-size:.82rem;color:#94a3b8;margin-top:12px}
-
-/* Footer */
 footer{background:#1a1a2e;color:#94a3b8;text-align:center;padding:24px 0;font-size:.85rem}
-
-/* Responsive */
 @media(max-width:640px){
   header{padding:40px 0 32px}
   header h1{font-size:1.8rem}
   .services-grid{grid-template-columns:1fr}
-  .process-steps{flex-direction:column;gap:16px}
+  .how-grid{grid-template-columns:1fr}
 }
 </style>
 </head>
 <body>
-
 <header>
   <div class="container">
-    <h1>Alex Chen</h1>
-    <div class="tagline">AI Automation &amp; Custom Software Development</div>
-    <div class="location">Remote · Available for freelance projects</div>
+    <h1>Codex Dev Studio</h1>
+    <div class="tagline">AI Automation / Web Development / API Integration</div>
+    <div class="contact-info">
+      邮箱: 3894226862@qq.com | 远程交付 | Payoneer 收款
+    </div>
     <div>
       <span class="badge">Python</span>
-      <span class="badge">JavaScript</span>
+      <span class="badge">TypeScript</span>
+      <span class="badge">Node.js</span>
       <span class="badge">AI/LLM</span>
-      <span class="badge">Automation</span>
+      <span class="badge">自动化</span>
       <span class="badge">Web Scraping</span>
-      <span class="badge">API Integration</span>
+      <span class="badge">API 开发</span>
+      <span class="badge">Express</span>
     </div>
   </div>
 </header>
 
 <section>
   <div class="container">
-    <h2>Services</h2>
+    <h2>服务项目</h2>
     <div class="services-grid">
       <div class="service-card">
-        <h3>AI Automation</h3>
-        <p>Custom workflows, auto-reply bots, data enrichment pipelines using GPT/LLMs. Replace manual processes with AI-powered automation.</p>
-        <span class="price">From $200</span>
+        <h3>AI 自动化工作流</h3>
+        <p>定制自动化流程、AI 客服机器人、数据清洗流水线。用 AI 替代重复人工操作。</p>
+        <span class="price">¥500 起</span>
       </div>
       <div class="service-card">
-        <h3>Web Scraping &amp; Data Extraction</h3>
-        <p>Scrape, parse, and structure data from any website. Bypass anti-bot measures, handle pagination, deliver clean datasets.</p>
-        <span class="price">From $250</span>
+        <h3>网页数据抓取</h3>
+        <p>从任意网站抓取、解析、清洗数据。处理分页、反爬，交付结构化数据。</p>
+        <span class="price">¥500 起</span>
       </div>
       <div class="service-card">
-        <h3>API Integration</h3>
-        <p>Connect your tools with third-party APIs (Stripe, Slack, Shopify, Notion, etc.). Build custom integrations between platforms.</p>
-        <span class="price">From $300</span>
+        <h3>API 对接开发</h3>
+        <p>对接第三方 API（支付、IM、CRM、电商平台等），打通系统间的数据孤岛。</p>
+        <span class="price">¥800 起</span>
       </div>
       <div class="service-card">
-        <h3>Chrome Extensions</h3>
-        <p>Custom browser extensions for productivity, data collection, or workflow enhancement. Publish to Chrome Web Store.</p>
-        <span class="price">From $400</span>
+        <h3>脚本工具开发</h3>
+        <p>批量文件处理、报表生成、数据迁移、邮件自动化、定时任务等小工具。</p>
+        <span class="price">¥300 起</span>
       </div>
       <div class="service-card">
-        <h3>Scripts &amp; Automation Tools</h3>
-        <p>One-off scripts to save hours of manual work: file processing, report generation, data migration, email automation.</p>
-        <span class="price">From $150</span>
+        <h3>Web 应用开发</h3>
+        <p>全栈开发：管理后台、数据看板、SaaS 工具。React + Node.js + PostgreSQL。</p>
+        <span class="price">¥3000 起</span>
       </div>
       <div class="service-card">
-        <h3>LLM Integration</h3>
-        <p>Integrate GPT/Claude into your product: chatbots, summarization, content generation, classification, and RAG pipelines.</p>
-        <span class="price">From $500</span>
+        <h3>LLM/AI 集成</h3>
+        <p>将 GPT/Claude 集成到产品中：聊天机器人、文档总结、内容生成、RAG 流水线。</p>
+        <span class="price">¥1500 起</span>
       </div>
     </div>
   </div>
@@ -123,52 +111,69 @@ footer{background:#1a1a2e;color:#94a3b8;text-align:center;padding:24px 0;font-si
 
 <section>
   <div class="container">
-    <h2>How It Works</h2>
-    <div class="process-steps">
-      <div class="step">
+    <h2>项目案例</h2>
+    <div class="project-card">
+      <h3>Email Threads API - 邮件线程管理 API</h3>
+      <p>TypeScript + Express + Prisma + PostgreSQL 构建的 RESTful API，支持邮件线程的 CRUD、草稿管理、归档功能。含测试和 Docker 部署。</p>
+      <span class="tag">TypeScript</span>
+      <span class="tag">Express</span>
+      <span class="tag">Prisma</span>
+      <span class="tag">Docker</span>
+      <span class="tag">Jest</span>
+    </div>
+    <div class="project-card">
+      <h3>Riona AI Agent - Instagram 自动化 AI Agent</h3>
+      <p>参与开源的 AI Agent 项目，实现 REST API 端点扩展，支持自动化社交平台互动。</p>
+      <span class="tag">TypeScript</span>
+      <span class="tag">Express</span>
+      <span class="tag">AI</span>
+    </div>
+    <div class="project-card">
+      <h3>TaskFlow - 用户注册验证系统</h3>
+      <p>实现完整的 POST /users 端点验证：邮箱格式校验、字段标准化、服务器端 ID 生成。</p>
+      <span class="tag">TypeScript</span>
+      <span class="tag">Express</span>
+      <span class="tag">Validation</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>合作流程</h2>
+    <div class="how-grid">
+      <div class="how-step">
         <div class="num">01</div>
-        <h3>Tell Me Your Need</h3>
-        <p>Describe the problem, tool, or workflow you want built. The more detail, the better.</p>
+        <h3>描述需求</h3>
+        <p>告诉我你需要什么：问题描述、技术栈、预算和时间线。</p>
       </div>
-      <div class="step">
+      <div class="how-step">
         <div class="num">02</div>
-        <h3>Get a Quote &amp; Timeline</h3>
-        <p>I&rsquo;ll review your request and provide a fixed price and delivery estimate within 24 hours.</p>
+        <h3>报价与排期</h3>
+        <p>24小时内给出固定报价和交付时间。小型项目当天可开工。</p>
       </div>
-      <div class="step">
+      <div class="how-step">
         <div class="num">03</div>
-        <h3>Build &amp; Deliver</h3>
-        <p>I build the solution, share progress updates, and deliver a working product. You only pay on completion.</p>
+        <h3>交付与收款</h3>
+        <p>持续交付进展，验收后付款。支持 Payoneer、USDT 收款。</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <h2>About</h2>
-    <div class="about-text">
-      <p>I&rsquo;m a full-stack developer with 8+ years of experience in Python, JavaScript, and cloud infrastructure. Over the past two years I&rsquo;ve specialized in AI-powered automation, helping businesses replace manual workflows with intelligent systems.</p>
-      <p>I work remotely with clients worldwide, delivering small-to-medium sized projects on tight timelines. My focus is on practical, working software&mdash;not over-engineered abstractions.</p>
-      <p>Recent work includes: AI-powered email automation, Chrome extension for lead generation, custom API integrations, and data extraction pipelines processing millions of records.</p>
     </div>
   </div>
 </section>
 
 <div class="cta-section">
   <div class="container">
-    <h2>Have a Project in Mind?</h2>
-    <p>Describe what you need built, and I&rsquo;ll get back to you with a quote within 24 hours.</p>
-    <a href="mailto:3894226862@qq.com" class="cta-btn">Start a Conversation</a>
-    <div class="cta-note">No obligation. Free scoping for most projects.</div>
+    <h2>有项目需要开发？</h2>
+    <p>描述你的需求，我会在24小时内回复报价。小项目当天开工。</p>
+    <a href="mailto:3894226862@qq.com" class="cta-btn">立即联系</a>
+    <div class="cta-note">免费需求评估 · 验收后付款</div>
   </div>
 </div>
 
 <footer>
   <div class="container">
-    Alex Chen &middot; Available for remote freelance work &middot; Payment via Payoneer
+    Codex Dev Studio · 远程技术开发服务 · 邮箱: 3894226862@qq.com · Payoneer 收款
   </div>
 </footer>
-
 </body>
 </html>
